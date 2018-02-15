@@ -23,6 +23,7 @@ h1 {
   margin: 5px;
 }
 
+
 .sidebar{
   height:100%;
   width:20%;
@@ -35,17 +36,25 @@ h2.nav {
   font-family: 'Open Sans', sans-serif;
   font-size: 30px;
   text-align: center;
-  color:#0099CC;
+  color: #5f91ec;
   margin-top: 50%;
 }
 
 .nav {
-  width:100%;
+  width:80%;
   display:block;
+  margin-left: 10%;
   padding:10px 0px;
   text-align:center;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  color:#0099CC;
+  color: #5f91ec;
+  text-shadow: 0.5px 0.5px gray;
   text-decoration-line: none;
+}
+a.nav:hover {
+    background-color:#ff7f50;
+    color:#FFE4C4;
+    font-size:19px;
+    text-shadow: none;
 }
