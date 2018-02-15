@@ -1,0 +1,51 @@
+body {
+  margin:0px;
+}
+
+.content{
+  /* set background image
+  how do i make this linked from the image in the folder?
+  */
+  text-align: center;
+  height: 100%;
+  width:80%;
+  /*need to adjust this for when sidebar is different sizes */
+  margin-left: 20%;
+  position: absolute;
+}
+
+h1 {
+  /* style of top header here*/
+  font-size: 90px;
+  font-family: 'Allerta', sans-serif;
+  font-weight: bolder;
+  color: #FF7F50;
+  margin: 5px;
+}
+
+.sidebar{
+  height:100%;
+  width:20%;
+  background-color:#FFE4C4;
+  position:fixed;
+}
+
+h2.nav {
+  /*style of navigation header here*/
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color:#0099CC;
+  margin-top: 50%;
+}
+
+.nav {
+  width:100%;
+  display:block;
+  padding:10px 0px;
+  text-align:center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color:#0099CC;
+  text-decoration-line: none;
+}
