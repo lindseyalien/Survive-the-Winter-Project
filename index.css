@@ -7,12 +7,10 @@ body {
   /* set background image
   how do i make this linked from the image in the folder?
   */
-  /*
-  */
   background-image: url("https://dsx.weather.com/util/image/w/gettyimages-634387506.jpg?v=at&w=1280&h=720&api=7db9fe61-7414-47b5-9871-e17d87b8b6a0");
   text-align: center;
-  height: 100%;
-  width:80%;
+  min-height: 100%;
+  min-width:80%;
   /*need to adjust this for when sidebar is different sizes */
   margin-left: 20%;
   position: absolute;
@@ -80,4 +78,23 @@ a.nav:hover {
     color:#FFE4C4;
     font-size:19px;
     text-shadow: none;
+}
+
+@media(max-width:500px) {
+  .content{
+    background-image: url("https://dsx.weather.com/util/image/w/gettyimages-634387506.jpg?v=at&w=1280&h=720&api=7db9fe61-7414-47b5-9871-e17d87b8b6a0");
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 50%
+  }
+  
+  .sidebar{
+    height:20%;
+    width:100%;
+    background-color:#FFE4C4;
+    position:fixed;
+  }
 }
