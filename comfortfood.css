@@ -3,7 +3,6 @@ body {
 }
 
 .pagetitle {
-  margin: 5px;
   text-align: center;
   min-height: 100%;
   min-width:80%;
@@ -14,11 +13,15 @@ body {
 
 h1 {
   /* style of top header here*/
-  font-size: 90px;
+  font-size: 60px;
   font-family: 'Allerta', sans-serif;
   font-weight: bolder;
   color: #FF7F50;
-  margin: 5px;
+}
+
+a {
+  color: #FF7F50;
+  text-decoration-line: none;
 }
 
 .sidebar{
@@ -55,4 +58,28 @@ a.nav:hover {
     color:#FFE4C4;
     font-size:19px;
     text-shadow: none;
+}
+
+a:hover{
+  text-decoration-line:none;
+}
+
+.photobody {
+  min-height: 90%;
+  max-width:50%;
+  /*need to adjust this for when sidebar is different sizes */
+  margin-left: 20%;
+  margin-top:5%;
+  position: absolute;
+}
+
+.square {
+    float:left;
+    position:relative;
+    width: 100%;
+    height:50px;
+    padding-bottom :100%; /* = width for a 1:1 aspect ratio */
+    margin:2%;
+    background-color:#1E1E1E;
+    overflow:hidden;
 }
