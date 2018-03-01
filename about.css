@@ -56,3 +56,16 @@ a.nav:hover {
     font-size:19px;
     text-shadow: none;
 }
+h3 {
+  /*style of about section here*/
+  font-size: 30px;
+  font-family: 'Allerta', sans-serif;
+  color: black;
+  margin-left: : 100px;
+}
+p {
+  font-size: 15px;
+  font-family: 'Allerta', sans-serif;
+  color: black;
+  margin-left: : 100px;
+}
