@@ -3,7 +3,6 @@ body {
 }
 
 .pagetitle {
-  margin: 5px;
   text-align: center;
   min-height: 100%;
   min-width:80%;
@@ -14,7 +13,7 @@ body {
 
 h1 {
   /* style of top header here*/
-  font-size: 90px;
+  font-size: 80px;
   font-family: 'Allerta', sans-serif;
   font-weight: bolder;
   color: #FF7F50;
@@ -54,4 +53,8 @@ a.nav:hover {
     color:#FFE4C4;
     font-size:19px;
     text-shadow: none;
+}
+
+.picturebody {
+  
 }
