@@ -19,6 +19,11 @@ h1 {
   color: #FF7F50;
 }
 
+a {
+  color: #FF7F50;
+  text-decoration-line: none;
+}
+
 .sidebar{
   height:100%;
   width:20%;
@@ -55,6 +60,22 @@ a.nav:hover {
     text-shadow: none;
 }
 
-.picturebody {
-  
+.photobody {
+  min-height: 100%;
+  max-width:80%;
+  /*need to adjust this for when sidebar is different sizes */
+  margin-left: 20%;
+  margin-top:5%;
+  position: absolute;
+}
+
+.square {
+    float:left;
+    position:relative;
+    width: 90%;
+    height:80px;
+    padding-bottom : 90%; /* = width for a 1:1 aspect ratio */
+    margin:2%;
+    background-color:#1E1E1E;
+    overflow:hidden;
 }
