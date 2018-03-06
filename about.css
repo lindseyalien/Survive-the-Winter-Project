@@ -2,11 +2,15 @@ body {
   margin:0px;
 }
 
-.pagetitle {
-  margin: 5px;
+.content{
+  /* set background image
+  how do i make this linked from the image in the folder?
+  */
+  /*
+  */
   text-align: center;
-  min-height: 100%;
-  min-width:80%;
+  height: 100%;
+  width:80%;
   /*need to adjust this for when sidebar is different sizes */
   margin-left: 20%;
   position: absolute;
@@ -20,6 +24,7 @@ h1 {
   color: #FF7F50;
   margin: 5px;
 }
+
 
 .sidebar{
   height:100%;
@@ -49,7 +54,6 @@ h2.nav {
   text-shadow: 0.5px 0.5px gray;
   text-decoration-line: none;
 }
-
 a.nav:hover {
     background-color:#ff7f50;
     color:#FFE4C4;
@@ -59,7 +63,7 @@ a.nav:hover {
 h3 {
   /*style of about section here*/
   font-size: 30px;
-  font-family: 'Lateef', cursive;
+  font-family: 'Allerta', sans-serif;
   color: black;
   margin-left: : 100px;
 }
