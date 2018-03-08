@@ -3,21 +3,13 @@ body {
   margin:0px;
 }
 
-.content{
-  background-color: white;
-  text-align: center;
-  min-height: 100%;
-  min-width: width:80%;
-  margin-left: 20%;
-  position: absolute;
-}
 
 .maintitle{
   text-align: center;
   min-height: 100%;
   min-width:80%;
   margin-left: 20%;
-  position: absolute;
+  position: initial;
 }
 
 h1 {
@@ -26,25 +18,9 @@ h1 {
   font-family: 'Allerta', sans-serif;
   font-weight: bolder;
   color: #FF7F50;
-  margin: 5px;
-  text-shadow: 0.5px 0.5px gray;
 }
 
 a {
-  color: #FF7F50;
-  text-decoration-line
-}
-
-h2.main {
-  /*style of smaller header here*/
-  font-family: 'Open Sans', sans-serif;
-  font-style:light;
-  font-size:30px;
-  text-align: center;
-  color: #FF7F50;
-}
-
- {
   color: #FF7F50;
   text-decoration-line: none;
 }
@@ -53,15 +29,17 @@ h2.main {
   height:100%;
   width:20%;
   background-color:#FFE4C4;
-  position:fixed;
+  position:absolute;
 }
 
 h2.nav {
   font-family: 'Open Sans', sans-serif;
   font-size: 30px;
-  text-align: center;
-  color: #5f91ec;
-  margin-top: 50%;
+    text-align: center;
+    color: #5f91ec;
+    margin-top: 50%;
+    margin-bottom:10%;
+    text-shadow: 0.5px 0.5px grey;
 }
 
 .nav {
@@ -89,11 +67,10 @@ a:hover{
 }
 
 .photobody {
-  min-height: 90%;
-  max-width:50%;
+  /*need to adjust this for when sidebar is different sizes */
+  position: sticky;
+  margin-top: 1%;
   margin-left: 20%;
-  margin-top:5%;
-  position: absolute;
 }
 
 .square {
@@ -101,8 +78,46 @@ a:hover{
     position:relative;
     width: 100%;
     height:50px;
-    padding-bottom :100%;
+    padding-bottom :100%; /* = width for a 1:1 aspect ratio */
     margin:2%;
-    background-color:#1E1E1E;
     overflow:hidden;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+}
+
+.text_area:hover {
+opacity: 1;
+/*background-color: white;*/
+}
+
+.text_area{
+  opacity: 0;
+}
+
+img:hover {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+@media (max-width: 800px) {
+  h1 {
+  font-size: 50px;
+  font-family: 'Allerta', sans-serif;
+  font-weight: bolder;}
+}
+
+
+@media (max-width: 600px) {
+  h1 {
+  font-size: 20px;
+  font-family: 'Allerta', sans-serif;
+  font-weight: bolder;}
+
 }
