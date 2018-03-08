@@ -1,5 +1,6 @@
 body {
   margin:0px;
+  background-color: #e6f3ff;
 }
 
 .content{
@@ -21,7 +22,7 @@ h1 {
   font-size: 90px;
   font-family: 'Allerta', sans-serif;
   font-weight: bolder;
-  color: #FF7F50;
+  color: #2c4786;
   margin: 5px;
 }
 
@@ -29,7 +30,7 @@ h1 {
 .sidebar{
   height:100%;
   width:20%;
-  background-color:#FFE4C4;
+  background-color:#d2d2d4;
   position:fixed;
 }
 
@@ -38,7 +39,7 @@ h2.nav {
   font-family: 'Open Sans', sans-serif;
   font-size: 30px;
   text-align: center;
-  color: #5f91ec;
+  color: #2c4786;
   margin-top: 50%;
 }
 
@@ -50,28 +51,29 @@ h2.nav {
   text-align:center;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  color: #5f91ec;
+  color: #2c4786;
   text-shadow: 0.5px 0.5px gray;
   text-decoration-line: none;
 }
 a.nav:hover {
-  background-color:#ff7f50;
+  background-color:#a8cdd7;
   color:#FFE4C4;
   font-size:19px;
   text-shadow: none;
 }
-div.spread2evenly > div {
+.container > div {
     display: inline-block;
     *display: inline; /* For IE7 */
     zoom: 1; /* Trigger hasLayout */
-    width: 50%;
+    width: 33%;
     text-align: center;
+    background-color: pink;
 }
-
 
 p {
   font-size: 15px;
   font-family: 'Allerta', sans-serif;
+  text-align: justify;
   color: black;
   margin-left: : 100px;
   margin-top: 20px;
