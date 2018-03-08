@@ -8,7 +8,7 @@ body {
   min-width:80%;
   /*need to adjust this for when sidebar is different sizes */
   margin-left: 20%;
-  position: absolute;
+  position: initial;
 }
 
 h1 {
@@ -38,6 +38,8 @@ h2.nav {
   text-align: center;
   color: #5f91ec;
   margin-top: 50%;
+  margin-bottom:10%;
+  text-shadow: 0.5px 0.5px grey;
 }
 
 .nav {
@@ -65,12 +67,10 @@ a:hover{
 }
 
 .photobody {
-  min-height: 90%;
-  max-width:50%;
   /*need to adjust this for when sidebar is different sizes */
+  position: sticky;
+  margin-top: 1%;
   margin-left: 20%;
-  margin-top:5%;
-  position: absolute;
 }
 
 .square {
@@ -80,6 +80,22 @@ a:hover{
     height:50px;
     padding-bottom :100%; /* = width for a 1:1 aspect ratio */
     margin:2%;
-    background-color:#1E1E1E;
     overflow:hidden;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  h1 {
+  font-size: 50px;
+  font-family: 'Allerta', sans-serif;
+  font-weight: bolder;}
+}
+
+
+@media (max-width: 600px) {
+  h1 {
+  font-size: 20px;
+  font-family: 'Allerta', sans-serif;
+  font-weight: bolder;}
+
 }
