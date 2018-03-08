@@ -28,7 +28,7 @@ a {
   height:100%;
   width:20%;
   background-color:#FFE4C4;
-  position:fixed;
+  position:absolute;
 }
 
 h2.nav {
@@ -81,6 +81,20 @@ a:hover{
     padding-bottom :100%; /* = width for a 1:1 aspect ratio */
     margin:2%;
     overflow:hidden;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+img:hover {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
