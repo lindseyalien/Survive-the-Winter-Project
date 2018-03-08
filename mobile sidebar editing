@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>survive the winter</title>
+    <link rel="stylesheet" type="text/css" href="edits.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+<!-- hi -->
+<!--this is the sidebar -->
+<nav>
+  <div class="nav-mobile">
+    <a id="nav-toggle" href="#!"><span></span></a>
+  </div>
+  <ul class="nav-list">
+    <li><a href="#!">Home</a></li>
+    <li><a href="#!">About</a></li>
+    <li><a href="#!">Services</a>
+      <ul class="nav-dropdown">
+        <li><a href="#!">home</a></li>
+        <li><a href="#!">about</a></li>
+        <li><a href="#!">comfort food</a></li>
+      </ul>
+    </li>
+    <li><a href="#!">Pricing</a></li>
+    <li><a href="#!">Contact</a></li>
+  </ul>
+</nav>
+
+<!--this is the main title and background image -->
+    <div class="content">
+      <div class="title">
+        <h2 class="main"> how to </h2>
+        <h1> SURVIVE THE<br>WINTER</br></h1>
+        <h2 class="main"> @ <a href="https://www.ucl.ac.uk">UCL</a> </h2>
+      </div>
+    </div>
+
+  </body>
+</html>
