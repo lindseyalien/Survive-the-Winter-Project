@@ -171,6 +171,24 @@ ul ul a {
 /* media queries - make it work for all screens*/
 
 @media (max-width: 768px) {
+
+.title {
+  margin-top: 50%;
+  padding:auto;
+}
+  h1 {
+    font-size: 4em;
+    color: #5F9EA0;
+  }
+  h2.main {
+    font-size:2em;
+    color: #5F9EA0;
+  }
+
+  a, a:hover, a:focus {
+      color: #5F9EA0;
+  }
+
     #sidebar {
         min-width: 80px;
         max-width: 80px;
