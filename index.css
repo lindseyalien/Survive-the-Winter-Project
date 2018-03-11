@@ -7,13 +7,14 @@ body {
 
 .title{
   /* will this work on all browsers/computer screens? */
-  margin-top: 5.5%;
-  position: relative;
+  margin-top: 6%;
+  margin-left:10%;
+  position: fixed;
 }
 
 h1 {
   /* style of large header here*/
-  font-size: 80px;
+  font-size: 7em;
   font-family: 'Allerta', sans-serif;
   font-weight: bolder;
   color: #2c4786;
@@ -25,7 +26,7 @@ h2.main {
   /*style of smaller header here*/
   font-family: 'Open Sans', sans-serif;
   font-style:light;
-  font-size:30px;
+  font-size:3em;
   text-align: center;
   color: #004480;
 }
