@@ -13,19 +13,20 @@
         <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
-                <div class="sidebar-header" id="sidebarCollapse">
-                    <h3>menu</h3>
-                    <strong>M</strong>
+            <div id="sidebarCollapse">
+                <div class="sidebar-header">
+                    <h3>survive the winter</h3>
+                    <strong><div class ="pulsate">STW</div></strong>
                 </div>
 
                 <ul class="list-unstyled components">
-                  <li class = "active">
-                      <li><a href="#"><span><i class="glyphicon glyphicon-home"></i></span>home</a></li>
-                      <li><a href="#">about</a></li>
-                      <li><a href="#">hit the town</a></li>
-                      <li><a href="#">stay at home</a></li>
-                      <li><a href="#">comfort food</a></li>
+                      <li><a href="#"><i class="glyphicon glyphicon-home"></i><span>home</span></a></li>
+                      <li><a href="#"><i class="glyphicon glyphicon-user"></i><span>about</span></a></li>
+                      <li><a href="#"><i class="glyphicon glyphicon-glass"></i><span>hit the town</span></a></li>
+                      <li><a href="#"><i class="glyphicon glyphicon-film"></i><span>stay at home</span></a></li>
+                      <li><a href="#"><i class="glyphicon glyphicon-cutlery"></i><span>comfort food</span></a></li>
                 </ul>
+              </div>
             </nav>
             <!-- Page Content Holder -->
             <div id="content">
@@ -73,6 +74,16 @@
                      $('#sidebar').toggleClass('active');
                  });
              });
+
+             $(document).ready(function() {
+               function pulsate() {
+                 $(".pulsate").
+                 animate({opacity: 0.2}, 1000, 'linear').
+                 animate({opacity: 1}, 1000, 'linear', pulsate);
+               }
+               pulsate();
+             });
+
          </script>
     </body>
 </html>
