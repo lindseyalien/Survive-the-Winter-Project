@@ -84,7 +84,7 @@ a:hover{
 }
 
 .square:hover .overlay {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .overlay {
@@ -97,7 +97,7 @@ a:hover{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #5F9EA0;
 }
 
 .text {
