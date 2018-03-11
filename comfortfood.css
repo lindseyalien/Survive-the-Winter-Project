@@ -5,18 +5,19 @@ body {
 .pagetitle {
   text-align: center;
   min-height: 100%;
-  min-width:80%;
+  min-width:100%;
   /*need to adjust this for when sidebar is different sizes */
-  margin-left: 20%;
   position: initial;
 }
 
 h1 {
-  /* style of top header here*/
-  font-size: 60px;
+  /* style of large header here*/
+  font-size: 7em;
   font-family: 'Allerta', sans-serif;
   font-weight: bolder;
-  color: #FF7F50;
+  color: #2c4786;
+  margin: 5px;
+  text-shadow: 0.5px 0.5px gray;
 }
 
 p {
