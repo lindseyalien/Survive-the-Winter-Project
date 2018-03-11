@@ -104,7 +104,7 @@ a:hover{
 }
 
 .text {
-  color: white;
+  color: #FFD700;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -112,8 +112,8 @@ a:hover{
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  text-shadow: 0.5px 0.5px black;
 }
-
 
 
 /* Responsive layout - makes a two column-layout instead of four columns */
