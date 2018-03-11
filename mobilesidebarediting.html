@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>survive the winter</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="edits.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+            <div id="sidebarCollapse">
+                <div class="sidebar-header">
+                    <h3>survive the winter</h3>
+                    <strong><div class ="pulsate">STW</div></strong>
+                </div>
+
+                <ul class="list-unstyled components">
+                      <li><a href="#"><i class="glyphicon glyphicon-home"></i><span>home</span></a></li>
+                      <li><a href="#"><i class="glyphicon glyphicon-user"></i><span>about</span></a></li>
+                      <li><a href="#"><i class="glyphicon glyphicon-glass"></i><span>hit the town</span></a></li>
+                      <li><a href="#"><i class="glyphicon glyphicon-film"></i><span>stay at home</span></a></li>
+                      <li><a href="#"><i class="glyphicon glyphicon-cutlery"></i><span>comfort food</span></a></li>
+                </ul>
+              </div>
+            </nav>
+            <!-- Page Content Holder -->
+            <div id="content">
+              <!--edit title here -->
+                <div class="pagetitle">
+                    <h1> COMFORT FOOD </h1>
+                </div>
+
+
+<!--- put in content here -->
+<!--page content. grid of 9 picture links -->
+    <div class="photobody">
+      <div class="container">
+          <div class="col-xs-6 col-sm-6 col-md-4">
+              <div class="square"> <a href="http://allrecipes.co.uk/recipe/6036/vegan-brownies.aspx"><img class ="img-responsive" src='images/brownies.png'></a> <div class="center"> brownies </div> </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-4">
+              <div class="square"> <a href="https://minimalistbaker.com/5-minute-vegan-hot-cocoa/"><img class ="img-responsive" src='images/hotchocolate.png'></a></div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-4">
+              <div class="square"> <a href="http://www.onegreenplanet.org/vegan-recipe/melt-in-your-mouth-vegan-chocolate-cinnamon-cookies/"><img class ="img-responsive" src='images/cookies.png'></a></div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-4">
+            <div class="square"> <a href="http://www.geniuskitchen.com/recipe/oven-roasted-sweet-potato-fries-497715"><img class ="img-responsive" src='images/fries.png'></a></div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-4">
+            <div class="square"> <a href="https://www.kitchentreaty.com/easy-vegan-peanut-butter-mug-cake/"><img class ="img-responsive" src='images/mugcake.png'></a></div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-4">
+            <div class="square"> <a href="https://detoxinista.com/best-vegan-mac-n-cheese/"><img class ="img-responsive" src='images/macncheese.png'></a></div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+    <!-- jQuery library --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>   
+    <!-- Latest compiled Bootstrap JavaScript --> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').mouseenter(function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+
+             $(document).ready(function() {
+               function pulsate() {
+                 $(".pulsate").
+                 animate({opacity: 0.2}, 1000, 'linear').
+                 animate({opacity: 1}, 1000, 'linear', pulsate);
+               }
+               pulsate();
+             });
+
+         </script>
+    </body>
+</html>
