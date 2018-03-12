@@ -29,6 +29,38 @@
         </ul>
       </div>
     </nav>
+
+    <header class="header">
+    <div class="hamburger">
+      <button class="button hamburger__button js-menu__toggle">
+        <span class="hamburger__label">Open menu</span>
+      </button>
+    </div>
+    <nav class="menu">
+      <ul class="list menu__list">
+        <li class="menu__group">
+          <a href="#0" class="link menu__link">Home</a>
+        </li>
+        <li class="menu__group">
+          <a href="#0" class="link menu__link">About me</a>
+        </li>
+        <li class="menu__group">
+          <a href="#0" class="link menu__link">Services</a>
+        </li>
+        <li class="menu__group">
+          <a href="#0" class="link menu__link">Portfolio</a>
+        </li>
+        <li class="menu__group">
+          <a href="#0" class="link menu__link">Blog</a>
+        </li>
+        <li class="menu__group">
+          <a href="#0" class="link menu__link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
     <!-- Page Content Holder -->
       <div class="photobody">
         <div class="container">
@@ -56,6 +88,12 @@
             });
         });
 
+            $(document).ready(function () {
+                $('#sidebarCollapse').click(function () {
+                    $('#mobilesidebar').toggleClass('active');
+                });
+            });
+
         $(document).ready(function() {
           function pulsate() {
             $(".pulsate").
@@ -64,6 +102,24 @@
           }
           pulsate();
         });
+
+          $(document).ready(function(){
+          'use strict';
+          class Menu {
+            constructor(settings) {
+              this.nodeMenu = settings.nodeMenu;
+              settings.nodeMenuButton.addEventListener('click', this.toggle.bind(this));
+            }
+            toggle() {
+              return this.nodeMenu.classList.toggle('js-menu_activated');
+            }
+          }
+          let nodeMenu = document.querySelector('body');
+          new Menu({
+            nodeMenu: nodeMenu,
+            nodeMenuButton: nodeMenu.querySelector('.js-menu__toggle')
+          });
+      });
 
     </script>
 
