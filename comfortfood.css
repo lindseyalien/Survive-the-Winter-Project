@@ -6,13 +6,11 @@ body {
   text-align: center;
   min-height: 100%;
   min-width:100%;
-  /*need to adjust this for when sidebar is different sizes */
-  position: initial;
 }
 
 h1 {
-  /* style of large header here*/
-  font-size: 7em;
+  /* style of header here*/
+  font-size: 5em;
   font-family: 'Allerta', sans-serif;
   font-weight: bolder;
   color: #2c4786;
@@ -42,12 +40,13 @@ a, a:hover, a:focus {
     min-height: 100%;
     min-width: 100%;
     position: absolute;
+  
 }
 
 #sidebar {
-    min-width: 90px;
-    max-width: 90px;
-    background: #d2d2d4;
+    min-width: 95px;
+    max-width: 95px;
+    background: #f9efeb;
     color: #004480;
     transition: all 0.3s;
     text-align: center;
@@ -95,13 +94,13 @@ a, a:hover, a:focus {
 }
 
 #sidebar.active .sidebar-header {
-    padding-top: 50%;
-    background: #d2d2d4;
+    padding-top: 10em;
+    background: #f9efeb;
 }
 
 #sidebar .sidebar-header {
-  padding-top: 50%;
-  background: #d2d2d4;
+  padding-top: 10em;
+  background: #f9efeb;
 }
 
 #sidebar.active .sidebar-header strong {
@@ -150,7 +149,7 @@ ul ul a {
 .photobody {
   /*need to adjust this for when sidebar is different sizes */
   position: sticky;
-  margin-top: 1%;
+  margin: auto;
 }
 
 .square {
