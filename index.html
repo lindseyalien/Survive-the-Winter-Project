@@ -1,114 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>survive the winter</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <title>survive the winter</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 
 <body>
-<!-- hi -->
-<div class="wrapper">
+  <!-- hi -->
+  <div class="wrapper">
     <!-- Sidebar Holder -->
     <nav id="sidebar">
-    <div id="sidebarCollapse">
+      <div id="sidebarCollapse">
         <div class="sidebar-header">
-            <h3>survive the winter</h3>
-            <strong><div class ="pulsate">STW</div></strong>
+          <h3>survive the winter</h3>
+          <strong class ="pulsate">STW</strong>
         </div>
 
         <ul class="list-unstyled components">
-              <li><a href="#"><i class="glyphicon glyphicon-home"></i><span>home</span></a></li>
-              <li><a href="#"><i class="glyphicon glyphicon-user"></i><span>about</span></a></li>
-              <li><a href="#"><i class="glyphicon glyphicon-glass"></i><span>hit the town</span></a></li>
-              <li><a href="#"><i class="glyphicon glyphicon-bed"></i><span>stay at home</span></a></li>
-              <li><a href="#"><i class="glyphicon glyphicon-cutlery"></i><span>comfort food</span></a></li>
+          <li><a href="#"><i class="glyphicon glyphicon-home"></i><span>home</span></a></li>
+          <li><a href="#"><i class="glyphicon glyphicon-user"></i><span>about</span></a></li>
+          <li><a href="#"><i class="glyphicon glyphicon-glass"></i><span>hit the town</span></a></li>
+          <li><a href="#"><i class="glyphicon glyphicon-bed"></i><span>stay at home</span></a></li>
+          <li><a href="#"><i class="glyphicon glyphicon-cutlery"></i><span>comfort food</span></a></li>
         </ul>
       </div>
     </nav>
 
     <header class="header">
-    <div class="hamburger">
-      <button class="button hamburger__button js-menu__toggle">
-        <span class="hamburger__label">Open menu</span>
-      </button>
-    </div>
-    <nav class="menu">
-      <ul class="list">
-        <li class = "menutext"><a href="#">home</a></li>
-        <li class = "menutext"><a href="#">about</a></li>
-        <li class = "menutext"><a href="#">hit the town</a></li>
-        <li class = "menutext"><a href="#">stay at home</a></li>
-        <li class = "menutext"><a href="#">comfort food</a></li>
-      </ul>
-    </nav>
-  </header>
+      <div class="hamburger">
+        <button class="button hamburger__button js-menu__toggle">
+          <span class="hamburger__label">open menu</span>
+        </button>
+      </div>
+      <nav class="menu">
+        <ul class="list">
+          <li class = "menutext"><a href="#">home</a></li>
+          <li class = "menutext"><a href="#">about</a></li>
+          <li class = "menutext"><a href="#">hit the town</a></li>
+          <li class = "menutext"><a href="#">stay at home</a></li>
+          <li class = "menutext"><a href="#">comfort food</a></li>
+        </ul>
+      </nav>
+    </header>
 
 
     <!-- Page Content Holder -->
-      <div class="photobody">
-        <div class="container">
-      <!--edit title here -->
-          <div class="title">
-            <h2 class="main"> how to </h2>
-            <h1> SURVIVE THE<br>WINTER</br></h1>
-            <h2 class="main"> @ <a href="https://www.ucl.ac.uk">UCL</a> </h2>
-          </div>
+    <div class="photobody">
+      <div class="container">
+        <!--edit title here -->
+        <div class="title">
+          <h2 class="main"> how to </h2>
+          <h1> SURVIVE THE<br>WINTER</h1>
+          <h2 class="main"> @ <a href="https://www.ucl.ac.uk">UCL</a> </h2>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+  <!-- jQuery library --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>   
+  <!-- Latest compiled Bootstrap JavaScript --> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- my javascript code -->
+  <script src="index.js"></script>
 
-
-
-    <!-- jQuery library --> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>   
-    <!-- Latest compiled Bootstrap JavaScript --> 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').mouseenter(function () {
-                $('#sidebar').toggleClass('active');
-            });
-        });
-
-            $(document).ready(function () {
-                $('#sidebarCollapse').click(function () {
-                    $('#mobilesidebar').toggleClass('active');
-                });
-            });
-
-        $(document).ready(function() {
-          function pulsate() {
-            $(".pulsate").
-            animate({opacity: 0.2}, 1000, 'linear').
-            animate({opacity: 1}, 1000, 'linear', pulsate);
-          }
-          pulsate();
-        });
-
-          $(document).ready(function(){
-          'use strict';
-          class Menu {
-            constructor(settings) {
-              this.nodeMenu = settings.nodeMenu;
-              settings.nodeMenuButton.addEventListener('click', this.toggle.bind(this));
-            }
-            toggle() {
-              return this.nodeMenu.classList.toggle('js-menu_activated');
-            }
-          }
-          let nodeMenu = document.querySelector('body');
-          new Menu({
-            nodeMenu: nodeMenu,
-            nodeMenuButton: nodeMenu.querySelector('.js-menu__toggle')
-          });
-      });
-
-    </script>
-
-  </body>
+</body>
 </html>
