@@ -165,7 +165,7 @@ ul ul a {
   opacity: 0.7;
 }
 
-.square:hover .overlay{
+.square:hover .overlay {
   opacity: 1;
 
 }
@@ -461,5 +461,3 @@ ul.img-list li {
     margin-bottom: 0;
     list-style: none;
   }
-
-}
