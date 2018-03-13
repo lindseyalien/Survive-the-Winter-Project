@@ -1,114 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>about</title>
-  <link href='css/bootstrap.css' rel='stylesheet'>
-  <link rel="stylesheet" type="text/css" href="about.css">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-</head>
+  <head>
+    <title>about</title>
+    <link href='css/bootstrap.css'rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet"href="css/custom">
+    <link rel="stylesheet"href="js/custom">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  </head>
 <body>
-  <!-- hi -->
-  <div class="wrapper">
-    <!-- Sidebar Holder -->
-    <nav id="sidebar">
-      <div id="sidebarCollapse">
-        <div class="sidebar-header">
-          <h3>survive the winter</h3>
-          <strong><div class ="pulsate"><i class="glyphicon glyphicon-arrow-right"></i></div></strong>
-        </div>
-
-        <ul class="list-unstyled components">
-          <li><a href="#"><i class="glyphicon glyphicon-home"></i><span>home</span></a></li>
-          <li><a href="#"><i class="glyphicon glyphicon-user"></i><span>about</span></a></li>
-          <li><a href="#"><i class="glyphicon glyphicon-glass"></i><span>hit the town</span></a></li>
-          <li><a href="#"><i class="glyphicon glyphicon-bed"></i><span>stay at home</span></a></li>
-          <li><a href="#"><i class="glyphicon glyphicon-cutlery"></i><span>comfort food</span></a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <header class="header">
-      <div class="hamburger">
-        <button class="button hamburger__button js-menu__toggle">
-          <span class="hamburger__label">open menu</span>
-        </button>
-      </div>
-      <nav class="menu">
-        <ul class="list">
-          <li class = "menutext"><a href="#">home</a></li>
-          <li class = "menutext"><a href="#">about</a></li>
-          <li class = "menutext"><a href="#">hit the town</a></li>
-          <li class = "menutext"><a href="#">stay at home</a></li>
-          <li class = "menutext"><a href="#">comfort food</a></li>
-        </ul>
-      </nav>
-    </header>
-
-
-    <!-- Page Content Holder -->
-    <div class="photobody">
-      <div class="content">
-        <div class="pagetitle">
-          <h1> Who are we? </h1>
-        </div>
-        <div class="container" id="images">
-          <div class="col-xs-4 col-sm-4 col-md-4 padding">
-            <div>
-              <img class="img-sqr" src='images/Wiktoria.jpg' width="300" height="200">
-              <p>Hi! I am a first year BASc student at UCL, majoring in economics and law. I took care of the “at home” section of this website, you can contact me @wwronska@ucl.ac.uk. I deal with stressful times by having a “me” time at home. All the tips I have shared with you are exactly the things I do to relax. Taking care of your physical well being is very important for your mental well being, but if you feel your stress is not something you can manage yourself, please ask for help.
-                <a href="https://www.nhs.uk/conditions/stress-anxiety-depression/mental-health-helplines/">Here’s</a> a list of NHS-approved mental health helplines.
-              </p>
-            </div>
-          </div>
-          <div class="col-xs-4 col-sm-4 col-md-4 padding">
-            <div>
-              <img class="img-sqr" src='images/Lindsey.jpg' width="300" height="200">
-              <p>jhbjbkknj</p>
-            </div>
-          </div>
-          <div class="col-xs-4 col-sm-4 col-md-4 padding">
-            <div>
-              <img class="img-sqr" src='images/Yoyo.jpg' width="300" height="200">
-              <p>hjjbbkjbk</p>
-            </div>
-          </div>
-        </div><!--end of container-->
-        <div class="container">
-          <div class="pagetitle">
-            <h1> Contact us </h1>
-          </div>
-          <div class="formcontainer"><!--form-->
-            <form action="action_page.php">
-
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name...">
-
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-
-              <label for="subject">Query</label>
-              <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
-
-              <input type="submit" value="Submit">
-
-            </form>
-          </div><!--end of form-->
-        </div><!--end of content-->
-        <div class="footer">
-          This page was created by Lindsey Allen, Yolande Barnsley and Wiktoria Wronska
-        </div>
-      </div>
-    </div>
+<!--this is the sidebar -->
+<!--would be good to work out hover if we still want to do that - javascript lesson i'm guessing? -->
+  <div class="sidebar col-sm-3">
+    <h2 class="nav">menu</h2>
+  <!--need to link to pages within the website - can't remember how!! -->
+      <a href="./index.html" class="nav">home</a>
+      <a href="./about.html" class="nav">about</a>
+      <a href="#" class="nav">stay at home</a>
+      <a href="#" class="nav">hit the town</a>
+      <a href="#" class="nav">comfort food</a>
   </div>
+<div class="content">
+  <h1> Who are we? <h2>
+<div class "container" id="images">
+<div class="col-sm-4 padding">
+  <div>
+      <img class="img-sqr"src='images/Wiktoria.jpg' width="300" height="200">
+      <p>Hi! I am a first year BASc student at UCL, majoring in economics and law. I took care of the “at home” section of this website, you can contact me @wwronska@ucl.ac.uk. I deal with stressful times by having a “me” time at home. All the tips I have shared with you are exactly the things I do to relax. Taking care of your physical well being is very important for your mental well being, but if you feel your stress is not something you can manage yourself, please ask for help.
+      <a href="https://www.nhs.uk/conditions/stress-anxiety-depression/mental-health-helplines/">Here’s</a> a list of NHS-approved mental health helplines.
+      </p>
+  </div>
+</div>
+<div class="col-sm-4 padding">
+    <div>
+      <img class="img-sqr"src='images/Lindsey.jpg' width="300" height="200">
+      <p>jhbjbkknj</p>
+    </div>
+</div>
+<div class="col-sm-4 padding">
+    <div>
+      <img class="img-sqr"src='images/Yoyo.jpg' width="300" height="200">
+      <p>hjjbbkjbk</p>
+    </div>
+</div>
+<div class="footer">
+  This page was created by Lindsey Allen, Yolande Barnsley and Wiktoria Wronska
+</div>
+</div><!--- end of container--->
+</div><!--end of content-->
 
 
-  <!--JAVASCRIPT CODES-->
-  <!-- jQuery library --> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>   
-  <!-- Latest compiled Bootstrap JavaScript --> 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <!-- my javascript code -->
-  <script src="index.js"></script>
 
+<script src="javascript/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"<>/script>
 </body>
 </html>
