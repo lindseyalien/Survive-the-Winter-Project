@@ -79,10 +79,20 @@ a.nav:hover {
     font-size:19px;
     text-shadow: none;
 }
-
+.footer{
+  position: fixed;
+  left: 35%;
+  bottom: 0;
+  padding: 10px 0;
+  font-family: cursive;
+  font-size: 18px;
+  background color: #d2d2d4
+  color: #FFE4C4
+  text-align: center;
+}
 @media(max-width:500px) {
   .content{
-    background-image: url("https://dsx.weather.com/util/image/w/gettyimages-634387506.jpg?v=at&w=1280&h=720&api=7db9fe61-7414-47b5-9871-e17d87b8b6a0");
+    background-image: url("images/winter.jpg");
     text-align: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;

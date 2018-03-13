@@ -82,3 +82,15 @@ p {
 .padding{
   padding: 0px 22px 0px 22px;
 }
+.footer{
+  position: fixed;
+  left: 22%;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0;
+  font-family: cursive;
+  font-size: 18px;
+  background color: #d2d2d4
+  color: #FFE4C4
+  text-align: center;
+}
