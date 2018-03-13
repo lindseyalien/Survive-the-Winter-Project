@@ -9,16 +9,22 @@
   <div class="pagetitle">
     <h1> ABOUT </h1>
   </div>
-<!--this is the sidebar -->
-<!--would be good to work out hover if we still want to do that - javascript lesson i'm guessing? -->
-    <div class="sidebar">
-      <h2 class="nav">menu</h2>
-<!--need to link to pages within the website - can't remember how!! -->
-      <a href="./index.html" class="nav">home</a>
-      <a href="./about.html" class="nav">about</a>
-      <a href="#" class="nav">stay at home</a>
-      <a href="#" class="nav">hit the town</a>
-      <a href="./comfortfood.html" class="nav">comfort food</a>
+
+    <div class="container">
+      <form action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+        <label for="subject">Query</label>
+        <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
     </div>
 
-</body>
+                  </body>

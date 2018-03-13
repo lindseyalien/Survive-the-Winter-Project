@@ -1,58 +1,59 @@
 body {
   margin:0px;
+  color: #2c4786;
 }
 
 .pagetitle {
-  margin: 5px;
   text-align: center;
   min-height: 100%;
   min-width:80%;
-  /*need to adjust this for when sidebar is different sizes */
-  margin-left: 20%;
-  position: absolute;
+  position: initial;
 }
 
 h1 {
-  /* style of top header here*/
-  font-size: 90px;
+  /* style of large header here*/
+  font-size: 7em;
   font-family: 'Allerta', sans-serif;
   font-weight: bolder;
-  color: #FF7F50;
+  color: #2c4786;
   margin: 5px;
-}
-
-.sidebar{
-  height:100%;
-  width:20%;
-  background-color:#FFE4C4;
-  position:fixed;
-}
-
-h2.nav {
-  /*style of navigation header here*/
-  font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
-  text-align: center;
-  color: #5f91ec;
-  margin-top: 50%;
-}
-
-.nav {
-  width:80%;
-  display:block;
-  margin-left: 10%;
-  padding:10px 0px;
-  text-align:center;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  color: #5f91ec;
   text-shadow: 0.5px 0.5px gray;
-  text-decoration-line: none;
 }
 
-a.nav:hover {
-    background-color:#ff7f50;
-    color:#FFE4C4;
-    font-size:19px;
-    text-shadow: none;
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    position: relative;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #2c4786;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #325199;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width:60%
+
 }
