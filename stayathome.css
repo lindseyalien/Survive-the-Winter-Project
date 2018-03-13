@@ -83,3 +83,14 @@ a:hover{
     background-color:#1E1E1E;
     overflow:hidden;
 }
+.footer{
+  position: relative;
+  left: 35%;
+  bottom: 0;
+  padding: 10px 0;
+  font-family: cursive;
+  font-size: 18px;
+  background color: #d2d2d4
+  color: #FFE4C4
+  text-align: center;
+}
