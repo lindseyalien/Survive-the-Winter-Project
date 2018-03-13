@@ -209,7 +209,7 @@ input[type=submit]:hover {
 }
 
 .footer{
-  position: fixed;
+  position: relative;
   left: 22%;
   bottom: 0;
   width: 100%;
