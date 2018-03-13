@@ -69,8 +69,8 @@ a:hover{
   max-width:50%;
   /*need to adjust this for when sidebar is different sizes */
   margin-left: 20%;
-  margin-top:5%;
-  position: absolute;
+  margin-top:10%;
+  position: sticky;
 }
 
 .square {
