@@ -199,58 +199,18 @@ h4 {
   text-align: center;
 }
 
-/*
-ul.img-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.footer{
+  position: relative;
+  left: 22%;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0;
+  font-family: cursive;
+  font-size: 18px;
+  background color: #d2d2d4
+  color: #FFE4C4
   text-align: center;
 }
-
-ul.img-list li {
-  display: inline-block;
-  height: 50px;
-  margin: 0 1em 1em 0;
-  position: relative;
-  width: 100%;
-}
-
-  span.text-content {
-    background: rgba(0,0,0,0.5);
-    color: white;
-    cursor: pointer;
-    display: table;
-    height: 50px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding-bottom :100%;
-    margin:2%;
-    opacity: 0;
-    -webkit-transition: opacity 500ms;
- -moz-transition: opacity 500ms;
- -o-transition: opacity 500ms;
- transition: opacity 500ms;
- transform: translate(-50%, -50%);
- -ms-transform: translate(-50%, -50%);
- text-align: center;
- text-shadow: 0.5px 0.5px black;
-}
-
-  span.text-content span {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-
-  }
-
-  ul.img-list li:hover span.text-content {
-  opacity: 1;
-}
-*/
-
-/* media queries - make it work for all screens*/
 
 @media (max-width: 768px) {
 
