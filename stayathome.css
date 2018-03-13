@@ -187,7 +187,8 @@ ul ul a {
 .text {
   color: white;
   font-size: 12px;
-  position: absolute;
+  position:absolute;
+  text-align: justify;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
