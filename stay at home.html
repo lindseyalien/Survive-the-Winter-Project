@@ -5,8 +5,6 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="stayathome.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Allerta|Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 
 <body>
@@ -29,33 +27,35 @@
         </ul>
       </div>
     </nav>
-  
-  <header class="header">
-    <div class="hamburger">
-      <button class="button hamburger__button js-menu__toggle">
-        <span class="hamburger__label">open menu</span>
-      </button>
-    </div>
-    <nav class="menu">
-      <ul class="list">
-        <li class = "menutext"><a href="#">home</a></li>
-        <li class = "menutext"><a href="#">about</a></li>
-        <li class = "menutext"><a href="#">hit the town</a></li>
-        <li class = "menutext"><a href="#">stay at home</a></li>
-        <li class = "menutext"><a href="#">comfort food</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Page Content Holder -->
-  <div class="photobody"
-  <div class="container">
-    <div class="pagetitle">
-      <h1> STAY AT HOME </h1>
-    </div>
-    <!--page content. grid of 6 picture links -->
-    <div class="container">
-      <div class="row">
+    <header class="header">
+      <div class="hamburger">
+        <button class="button hamburger__button js-menu__toggle">
+          <span class="hamburger__label">open menu</span>
+        </button>
+      </div>
+      <nav class="menu">
+        <ul class="list">
+          <li class = "menutext"><a href="#">home</a></li>
+          <li class = "menutext"><a href="#">about</a></li>
+          <li class = "menutext"><a href="#">hit the town</a></li>
+          <li class = "menutext"><a href="#">stay at home</a></li>
+          <li class = "menutext"><a href="#">comfort food</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <!-- Page Content Holder -->
+    <div class="photobody">
+      <div class="container">
+
+      <div class="pagetitle">
+        <h1> STAY AT HOME </h1>
+      </div>
+
+      <!--page content. grid of 6 picture links -->
+      <div class="container">
         <div class="col-xs-6 col-sm-6 col-md-4">
           <div class="square"> <iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DWXe9gFZP0gtP" width="360" height="360" frameborder="0" allowtransparency="true"></iframe></div>
         </div>
@@ -65,8 +65,6 @@
         <div class="col-xs-6 col-sm-6 col-md-4">
           <div class="square"> <iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX504r1DvyvxG" width="360" height="360" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
         </div>
-      </div><!---end of row---->
-      <div class="row">
         <div class="col-xs-6 col-sm-6 col-md-4">
           <div class="square"> <a href="https://www.netflix.com/title/80025678"><img class="img-responsive" src="images/crown.jpg" width="360" height="360"></a></div>
         </div>
@@ -74,36 +72,39 @@
           <div class="square"> <a href="https://www.netflix.com/title/60031262"><img class ="img-responsive" src="images/love.jpg" width="360" height="360"></a></div>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-4">
-          <div class="square"> <a href="https://www.netflix.com/title/80049872"><img class ="img-responsive" src='images/chelsea.png' width="360" height="360"></a></div>
+          <div class="square"> <a href="https://www.netflix.com/title/80049872"><img class ="img-responsive" src='images/chelsea.jpg' width="360" height="360"></a></div>
         </div>
-      </div><!---end of row--->
-      <div class="footer">
-        This page was created by Lindsey Allen, Yolande Barnsley and Wiktoria Wronska
-      </div>
-    </div> <!--end of container---->
-  </div><!---end of container-->
-</div><!---end of photobody---->
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Latest compiled Bootstrap JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <div class="footer">
+          This page was created by Lindsey Allen, Yolande Barnsley and Wiktoria Wronska
+        </div>
+      </div><!---end of container---->
+    </div><!---end of content--->
+  </div><!---end of photobody---->
+  </div><!---end of wrapper----->
 
 
-<script type="text/javascript">
-$(document).ready(function () {
-  $('#sidebarCollapse').mouseenter(function () {
-    $('#sidebar').toggleClass('active');
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript">
+  $(document).ready(function () {
+    $('#sidebarCollapse').mouseenter(function () {
+      $('#sidebar').toggleClass('active');
+    });
   });
-});
-$(document).ready(function() {
-  function pulsate() {
-    $(".pulsate").
-    animate({opacity: 0.2}, 1000, 'linear').
-    animate({opacity: 1}, 1000, 'linear', pulsate);
-  }
-  pulsate();
-});
+  $(document).ready(function() {
+    function pulsate() {
+      $(".pulsate").
+      animate({opacity: 0.2}, 1000, 'linear').
+      animate({opacity: 1}, 1000, 'linear', pulsate);
+    }
+    pulsate();
+  });
 </script>
 
 </body>
