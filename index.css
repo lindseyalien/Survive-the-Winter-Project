@@ -13,7 +13,7 @@ body {
 h1 {
   /* style of large header here*/
   font-size: 7em;
-  font-family: 'Rosarivo', serif;
+  font-family: 'Raleway', sans-serif;
   color: #2c4786;
   margin: 5px;
   text-shadow: 0.5px 0.5px gray;
@@ -29,22 +29,25 @@ h2.main {
   color: #004480;
 }
 
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #004480;
+/*sidebar header*/
+h3 {
+  font-family: 'Raleway', sans-serif;
 }
 
+/*link style and hover effect*/
 a, a:hover, a:focus {
     color: #004480;
     text-decoration: none;
     transition: all 0.3s;
+    font-family: 'Lato', sans-serif;
+}
+
+.title a {
+  font-family: 'Rosarivo', serif;
+  font-style:italic;
 }
 
 /* edit sidebar styling here*/
-
 .wrapper {
   display: flex;
   align-items: stretch;
@@ -160,8 +163,10 @@ ul ul a {
   font-size: 0.9em !important;
   padding-left: 30px !important;
   background: #d2d2d4;
+  font-family: 'Lato', sans-serif;
 }
 
+/* social buttons */
 #sidebar .fa {
   display:none;
 }
@@ -178,20 +183,15 @@ ul ul a {
     text-decoration: none;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
     opacity: 0.7;
 }
 
-/* Set a specific color for each brand */
-
-/* Facebook */
 .fa-facebook {
     background: #3B5998;
     color: white;
 }
 
-/* Twitter */
 .fa-twitter {
     background: #55ACEE;
     color: white;
@@ -203,7 +203,7 @@ ul ul a {
 }
 
 
-/*photo here*/
+/*main body photo here*/
 .photobody {
   position: sticky;
   background-image: url('images/winter.jpg');
@@ -215,6 +215,7 @@ ul ul a {
   min-width:100%;
 }
 
+/*footer style*/
 .footer{
   position: absolute;
   background-color: rgba(245, 245, 245, 0.85);
@@ -222,15 +223,18 @@ ul ul a {
   right: 0;
   left: 0;
   text-align: center;
-  font-family: cursive;
-  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  color: #696969;
+  font-size: 1em;
+  height:3%;
 }
 
 /* media queries - make it work for all screens*/
 
 @media (max-width: 768px) {
 
-/* title formatting */
+/* text formatting */
 
 .title{
     position: fixed;

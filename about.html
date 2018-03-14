@@ -6,16 +6,17 @@
   <link rel="stylesheet" type="text/css" href="about.css">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:bold|Raleway:extra-bold" rel="stylesheet">
 </head>
 <body>
-  <!-- hi -->
+  <!-- this div holds all the content!-->
   <div class="wrapper">
-    <!-- Sidebar Holder -->
+    <!-- this is the desktop sidebar -->
     <nav id="sidebar">
       <div id="sidebarCollapse">
         <div class="sidebar-header">
           <h3>survive the winter</h3>
-          <strong><div class ="pulsate"><i class="glyphicon glyphicon-arrow-right"></i></div></strong>
+          <strong><div class="pulsate"><i class="glyphicon glyphicon-arrow-right"></i></div></strong>
         </div>
 
         <ul class="list-unstyled components">
@@ -30,7 +31,7 @@
         <a href="#" class="fa fa-instagram"></a>
       </div>
     </nav>
-
+<!-- this is the mobile sidebar -->
     <header class="header">
       <div class="hamburger">
         <button class="button hamburger__button js-menu__toggle">
@@ -49,77 +50,65 @@
     </header>
 
 
-    <!-- Page Content Holder -->
+    <!-- edit page content here -->
     <div class="photobody">
       <div class="content">
         <div class="pagetitle">
           <h1> Who are we? </h1>
         </div>
-        <div class="container" id="images">
-          <div class="col-xs-4 col-sm-4 col-md-4 padding">
-            <div>
-              <img class="img-sqr" src='images/Wiktoria.jpg' width="300" height="200">
-              <p>Hi! I am a first year BASc student at UCL, majoring in economics and law. I took care of the “at home” section of this website, you can contact me @wwronska@ucl.ac.uk. I deal with stressful times by having a “me” time at home. All the tips I have shared with you are exactly the things I do to relax. Taking care of your physical well being is very important for your mental well being, but if you feel your stress is not something you can manage yourself, please ask for help.
-                <a href="https://www.nhs.uk/conditions/stress-anxiety-depression/mental-health-helplines/">Here’s</a> a list of NHS-approved mental health helplines.
-              </p>
-            </div>
-          </div>
-          <div class="col-xs-4 col-sm-4 col-md-4 padding">
-            <div>
-              <img class="img-sqr" src='images/Lindsey.jpg' width="300" height="200">
-              <p>jhbjbkknj</p>
-            </div>
-          </div>
-          <div class="col-xs-4 col-sm-4 col-md-4 padding">
-            <div>
-              <img class="img-sqr" src='images/Yoyo.jpg' width="300" height="200">
-              <p>hjjbbkjbk</p>
-            </div>
-          </div>
-        </div><!--end of container-->
+      <!--images and descriptions -->
         <div class="container">
-          <div class="pagetitle">
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class ="square">
+              <img class="images" alt="Wiktoria Picture" src='images/Wiktoria.jpg'>
+            </div>
+            <p>Hi! I'm Wiktoria and I am a first year BASc student at UCL, majoring in economics and law. I took care of the “at home” section of this website, you can contact me through the contact form below for more music or netflix recomendations. I use music and TV shows or films to forget about the stress of University. However, if you feel your stress is not something you can manage yourself, please ask for help.
+            <br><br><a href="https://www.nhs.uk/conditions/stress-anxiety-depression/mental-health-helplines/">Click here for a list of NHS-approved mental health helplines.</a></p>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="square">
+              <img class="images" alt="Lindsey Picture" src='images/Lindsey.jpg'>
+            </div>
+              <p>I'm Lindsey! I'm also a first year BASc student at UCL, focusing on the Societies major. I was in charge of the "comfort food" section of this website - and got so many ideas for tasty food to make next winter. <br><br> All food listed is vegan-friendly!</p>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="square">
+              <img class ="images" alt="Yoyo picture" src='images/Yoyo.jpg'>
+            </div>
+            <p>Hi I'm Yo yo! I worked on the "hit the town" section of the website</p>
+          </div>
+        </div><!--end of images and descriptions-->
+
+        <!--form here-->
+        <div class="container">
+          <div class="subtitle">
             <h1> Contact us </h1>
           </div>
-          <div class="formcontainer"><!--form-->
+          <div class="formcontainer">
             <form action="action_page.php">
-
               <label for="fname">First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name...">
-
               <label for="lname">Last Name</label>
               <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-
               <label for="subject">Query</label>
               <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
-
               <input type="submit" value="Submit">
-
             </form>
-          </div><!--end of form-->
-<<<<<<< HEAD
-        </div><!--end of container-->
-      </div> <!--end of content-->
-    </div> <!--end of photobody-->
-    <div class="footer">
-      This page was created by Lindsey Allen, Yolande Barnsley and Wiktoria Wronska
-=======
-          <div class="footer">
-            This page was created by Lindsey Allen, Yolande Barnsley and Wiktoria Wronska
           </div>
-        </div><!--end of container-->
+        </div><!--end of form-->
+      </div> <!--end of content-->
+      <div class="footer">
+        This page was created by Lindsey Allen, Yolande Barnsley and Wiktoria Wronska
       </div>
->>>>>>> b2ace56384a359f2a943a25c8490de7de5127bd0
-    </div>
-  </div> <!--end of wrapper-->
-
+    </div> <!--end of photobody-->
+  </div><!--end of wrapper-->
 
   <!--JAVASCRIPT CODES-->
   <!-- jQuery library --> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>   
   <!-- Latest compiled Bootstrap JavaScript --> 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <!-- my javascript code -->
+  <!-- personal javascript code -->
   <script src="index.js"></script>
 
 </body>
