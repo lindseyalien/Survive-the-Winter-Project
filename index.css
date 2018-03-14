@@ -5,17 +5,17 @@ body {
 
 .title{
   /* will this work on all browsers/computer screens? */
-  margin-top: 6%;
-  margin-left:10%;
-  position: fixed;
+  position: relative;
+  width:100%;
+  padding-top:10em;
 }
 
 h1 {
   /* style of large header here*/
-  font-size: 7em;
+  font-size: 8vw;
   font-family: 'Raleway', sans-serif;
   color: #2c4786;
-  margin: 5px;
+  margin:auto;
   text-shadow: 0.5px 0.5px gray;
 }
 
@@ -24,7 +24,7 @@ h2.main {
   font-family: 'Rosarivo', serif;
   font-style: italic;
   font-style: bold;
-  font-size:2.3em;
+  font-size:4vw;
   text-align: center;
   color: #004480;
 }
