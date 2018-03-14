@@ -256,8 +256,13 @@ input[type=submit]:hover {
 
 
 .footer{
+<<<<<<< HEAD
   position: absolute;
   background-color: rgba(245, 245, 245, 0.85);
+=======
+  position: relative;
+  left: 22%;
+>>>>>>> b2ace56384a359f2a943a25c8490de7de5127bd0
   bottom: 0;
   right: 0;
   left: 0;
