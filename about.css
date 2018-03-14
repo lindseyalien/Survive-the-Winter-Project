@@ -90,7 +90,8 @@ p {
   padding: 15px 0;
   font-family: cursive;
   font-size: 18px;
-  background color: #d2d2d4
+  background color: #d2d2d4 !important;
+  overflow: auto;
   color: #FFE4C4
   text-align: center;
 }
