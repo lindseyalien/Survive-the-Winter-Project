@@ -206,7 +206,7 @@ ul ul a {
 /*main body photo here*/
 .photobody {
   position: sticky;
-  background-image: url('images/winter.jpg');
+  background-image: url('./images/winter.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-image: horizontal;
