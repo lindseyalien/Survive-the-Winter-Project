@@ -291,6 +291,7 @@ footer{
   font-style:italic;
   font-size: 1em;
   height:3%;
+  padding-top:3%;
 }
 
 /* media queries - make it work for all screens*/
