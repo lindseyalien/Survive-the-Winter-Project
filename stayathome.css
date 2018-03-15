@@ -280,7 +280,7 @@ h4 {
 
 /*footer style*/
 
-footer{
+.footer{
   position: absolute;
   background-color: rgba(245, 245, 245, 0.85);
   bottom: 0;
